@@ -1,0 +1,11 @@
+<div id="generateDB" class="panel panel-default">
+    <h3> create Databases</h3>
+    <div class="panel-body">
+        <form name="generateDB" novalidate class="db-form">
+            Name:
+            <input type="text" ng-pattern='/^[A-z]+$/' ng-model="db.name" class="input-btn-report-gen" required/> 
+            <input type="submit" ng-click="create(db)" class="btn btn-success" value="Create" ng-disabled="generateDB.$invalid"/>
+        </form>
+    </div>
+    <div class="gridStyle" ui-grid="{ data: myData }">
+</div>

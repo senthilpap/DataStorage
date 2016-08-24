@@ -1,0 +1,16 @@
+<div class="reports-modal">
+    <div class="reports-modal-dialog">
+        <div class="reports-modal-content">
+            <div class="reports-modal-body">
+                <div class="reports-dialog-close">
+                    <a href="" ng-click="close()" class="reports-dialog-close-link">close</a>
+                </div>
+                <div class="reports-file-container">
+                    <form name="importData" novalidate class="table-form">
+                        <input type="file" onchange="angular.element(this).scope().importdata(this)" name="importFileLoader" ng-model="filePath" accept=".csv"  class="reports-file-window" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

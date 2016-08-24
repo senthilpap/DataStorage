@@ -1,0 +1,13 @@
+<div id="reports" class="panel panel-default">
+    <h3> Add New Record</h3>
+    <form class="" >
+        <div class="report-fields-crud" ng-bind-html="htmlString">
+        
+        </div>
+    </form>
+    <div class="reports-crud-submit">
+        <a href="#/reports">Cancel</a>
+        <input type="button" ng-click="insertOrUpdate()" class="btn btn-success reports-add-new" value="{{actionButton}}" />
+        <input type="button" ng-show="{{action}}" ng-click="deleteData()" class="btn btn-danger reports-add-new" value="Delete" />
+    </div>
+</div>

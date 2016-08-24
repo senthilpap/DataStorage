@@ -1,0 +1,29 @@
+<div id="generateTable" class="panel panel-default">
+    <h3> create tables</h3>
+    <div class="panel-body">
+        <form name="generateTable" novalidate class="table-form">
+            Database:
+            <select class="input-btn-report-gen" ng-model="table.database" ng-options="database.dbName for database in databases" ng-change="listTables(value)" required ng-init="databases[0]"></select>Name:
+            <input type="text" ng-model="table.name"  ng-pattern='/^[A-z]+$/' class="input-btn-report-gen" required/> Number of columns:
+            <input type="number" ng-model="table.noOfColumnsGen" min="1" max="8" class="input-btn-report-gen" value="1" required/>
+            <input type="submit" ng-click="go(table)" class="btn btn-success" value="Go" ng-disabled="generateTable.$invalid" />
+        </form>
+        <form name="generateFields" class="column-form" novalidate name="fields">
+            <div class="panel panel-default column-list">
+                <ul>
+                    <li class="columns-list" ng-repeat="column in noOfColumns">
+                        <div class="form-group">
+                            Name:
+                            <input ng-pattern='/^[A-z]+$/' class="input-btn-report-gen column-table" ng-model="field.name[column]" type="colName" required/> Type:
+                            <select class="input-btn-report-gen" ng-model="field.type[column]" ng-options="dataType.name for dataType in dataTypes" ng-init="field.type[column]=dataTypes[0]"></select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="table-save">
+                <input type="submit" ng-click="save()" ng-disabled="generateFields.$invalid" class="btn btn-success" name="save" value="Save" />
+            </div>
+        </form>
+    </div>
+    <div class="gridStyle" ui-grid="{ data: myData }">
+</div>

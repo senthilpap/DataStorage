@@ -1,0 +1,193 @@
+* {
+    font-family: Arial, sans-serif, verdana;
+}
+
+#main {
+    padding: 2em;
+}
+
+.panel {
+    padding: 1em;
+}
+
+input, select {
+    margin: 0 1em;
+    padding: 5px;
+}
+
+.table-form input.ng-invalid.ng-touched {
+    background-color: #FA787E;
+}
+
+.table-form input.ng-valid.ng-touched {
+    background-color: #78FA89;
+}
+
+.column-form input.ng-invalid.ng-touched {
+    background-color: #FA787E;
+}
+
+.column-form input.ng-valid.ng-touched {
+    background-color: #78FA89;
+}
+
+.db-form input.ng-invalid.ng-touched {
+    background-color: #FA787E;
+}
+
+.db-form input.ng-valid.ng-touched {
+    background-color: #78FA89;
+}
+
+.btn-success[disabled] {
+    background-color: #F00;
+    border-color: #F00;
+}
+
+.table-form {
+    margin-bottom: 2em;
+}
+
+.form-inline .form-group {
+    margin-bottom: 1em;
+}
+
+.columns-list {
+    list-style-type: none;
+}
+
+.column-form .table-save {
+    float: right;
+    margin-right: 50px;
+}
+
+input[name="save"] {
+    display: none;
+}
+
+.input-btn-report-gen {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 21%;
+    height: 34px;
+}
+
+.input-btn-report-gen.column-table {
+    width: 20%;
+}
+
+.growl-notifications {
+  position: fixed;
+  top: 150px;
+  right: 10px;
+}
+
+.growl-notification {
+  border: 1px solid black;
+  padding: 15px 30px;
+  margin-bottom: 15px;
+}
+
+.reports-header {
+  padding: 15px;
+  width: 100%;
+}
+
+.reports-select-table {
+  width: 25%;
+}
+
+.reports-add-new {
+  width: 8%;
+}
+
+.report-field-label {
+  width: 10%;
+}
+
+.report-fields-crud input[type="checkbox"] {
+  width: 50px;
+}
+
+.report-fields-crud input{
+    margin: 0.5em;
+    width: 50%;
+}
+
+.report-fields-crud input[type="textarea"] {
+  height: 7em;
+}
+
+.reports-crud-submit {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.link-button {
+    background: none;
+    border: none
+}
+
+.input-btn-disabled {
+    border: 1px solid #F0ECEC;
+}
+
+.column-list {
+  border: none;
+}
+
+#navigate-menu .active > a {
+  background-color: #88E482;
+}
+
+.report-header {
+  color: #fff !important;
+}
+
+.reports-import-file {
+  display: inline-block;
+}
+
+.reports-file-window {
+  padding-top: 2px;
+  margin: 0px;
+  display: inline-block !important;
+  width: 285px;
+  margin-right: 5px;
+}
+
+.reports-modal {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.reports-modal-dialog {
+  position: relative;
+  margin: 19% auto;
+  height: 100px;
+  width: 400px;
+  padding: 0 20px 20px 20px;
+  background: #E7E7E7;
+}
+
+.reports-file-import {
+  width: 17%;
+}
+
+.reports-dialog-close {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  left: 92%;
+}
+
+.reports-file-container {
+  padding-top: 20px;
+}
+
+.reports-hide-partially {
+  opacity: 0.4;
+}

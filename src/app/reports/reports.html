@@ -1,0 +1,19 @@
+<div id="reports" ng-class="hideBackgroung">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header reports-header">
+                <!-- <h3>Data</h3> -->
+                <form name="showReports" novalidate class="table-form">
+                    <select required class="input-btn-report-gen" ng-model="dbName" ng-options="database.dbName for database in databases" ng-change="listTables(value)" ng-init="databases[0]"></select>
+                    <select required class="input-btn-report-gen" ng-model="tableName" ng-options="tableName.name for tableName in tableNames" ng-change="updateTableName(value)"></select>
+                    <a href="#addNew/info?id={{ recordID }}&name={{ tableName.name }}" class="btn btn-success reports-add-new" ng-disabled="showReports.$invalid">Add New</a>
+                    <button ng-click="export()" ng-disabled="showReports.$invalid" class="btn btn-success"> Export </button>
+                    <button ng-click="import()" ng-disabled="showReports.$invalid" class="btn btn-success"> Import </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="grid" ui-grid="gridOptions"  id="reportsGrid" external-scopes="myViewModel">
+    </div>
+</div>
+<div import-file class="reports-import-file" ng-hide="showFileImport" on-close="hideDialog()" on-importdata = "importDataFromFile()"></div>
