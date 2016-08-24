@@ -29,7 +29,7 @@
 
 4) If we want edit or delere data click edit menu in the grid
 
-#Note:
+###Note:
 
 Please download angular 1.3.1, bootstrap 3.0.0 and angular ui-grid 3.0.0 versions.
 
