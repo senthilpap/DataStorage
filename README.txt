@@ -25,5 +25,3 @@ Steps to create Reports:
 3)Reports => AddNew => Enter data
 
 4) If we want edit or delere data click edit menu in the grid
-
-http://ciwd.cognizant.com/exact/componentdetails?compid=80211
